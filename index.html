@@ -189,7 +189,7 @@
             Укажите предполагаемые даты поездки, <br />
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <button type="button" class="button search-button">
+          <button type="button" class="button search-button open-modal">
             ПОИСК ГОСТИНИЦЫ В седоне
           </button>
         </section>
@@ -211,7 +211,7 @@
               class="subscription-field"
               type="email"
               placeholder="Ваш e-mail"
-              name="subscribe"
+              name="subscribe" required
             />
             <button class="button button-text subcription-button" type="submit">
               Подписаться
@@ -222,7 +222,7 @@
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="footer-item socials">
             <li>
-              <a class="socials-item social-link" href="#">
+              <a class="social-link" href="#">
                 <svg
                   width="24"
                   height="14"
@@ -241,7 +241,7 @@
               </a>
             </li>
             <li>
-              <a class="socials-item social-link" href="#">
+              <a class="social-link" href="#">
                 <svg
                   width="18"
                   height="16"
@@ -258,7 +258,7 @@
               </a>
             </li>
             <li>
-              <a class="socials-item social-link" href="#">
+              <a class="social-link" href="#">
                 <svg
                   width="22"
                   height="17"
@@ -340,5 +340,40 @@
         </section>
       </footer>
     </div>
+    <section class="modal">
+      <div class="modal-window">
+        <h2 class="block-title modal-title">Поиск гостиницы в Седоне</h2>
+          <ul class="modal-settings">
+            <li class="modal-settings-item">
+              <label class="modal-text date-label" for="check-in">Дата заезда:</label>
+              <span class="date-label-icon"></span>
+              <input class="modal-input" type="date" name="check-in" id="check-in">
+            </li>
+            <li class="modal-settings-item">
+              <label class="modal-text date-label" for="check-in">Дата выезда:</label>
+              <span class="date-label-icon"></span>
+              <input class="modal-input" type="date" name="check-in" id="check-out" required>
+            </li>
+          </ul>
+          <ul class="modal-settings age" >
+            <li class="modal-settings-item">
+              <label class="modal-text adult-label" for="adult">Взрослые:</label>
+              <input class="number" type="number" name="adult" id="adult" value="1" required>
+            </li>
+            <li class="modal-settings-item">
+              <label class="modal-text kid-label" for="kid">Дети:</label>
+              <input class="number" type="number" name="kid" id="kid" value="0">
+            </li>
+          </ul>
+          <button class= "modal-text modal-search" type="submit" >Найти</button>
+
+
+        <button class="close-modal">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+      </div>
+
+    </section>
+  <script src="./scripts/script.js"></script>
   </body>
 </html>
