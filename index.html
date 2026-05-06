@@ -195,7 +195,7 @@
         </section>
       </main>
       <footer>
-        <section class="subscription-index">
+        <section class="subscription subscription-index">
           <h2 class="block-title subscription-title">
             Подпишитесь на рассылку
           </h2>
@@ -211,7 +211,8 @@
               class="subscription-field"
               type="email"
               placeholder="Ваш e-mail"
-              name="subscribe" required
+              name="subscribe"
+              required
             />
             <button class="button button-text subcription-button" type="submit">
               Подписаться
@@ -341,39 +342,98 @@
       </footer>
     </div>
     <section class="modal">
-      <div class="modal-window">
-        <h2 class="block-title modal-title">Поиск гостиницы в Седоне</h2>
+      <form
+        class="hotel-search"
+        action="https://echo.htmlacademy.ru/courses"
+        method="get"
+      >
+        <div class="modal-window">
+          <h2 class="block-title modal-title">Поиск гостиницы в Седоне</h2>
           <ul class="modal-settings">
             <li class="modal-settings-item">
-              <label class="modal-text date-label" for="check-in">Дата заезда:</label>
-              <span class="date-label-icon"></span>
-              <input class="modal-input" type="date" name="check-in" id="check-in">
+              <label class="modal-text date-label" for="check-in"
+                >Дата Заезда:</label
+              >
+              <div class="input-group">
+                <input
+                  class="modal-input modal-input-date"
+                  placeholder="Укажите дату"
+                  type="text"
+                  name="check-in"
+                  id="check-in"
+                  required
+                />
+                <label class="modal-mess warning-mess" for="check-in"
+                  >Мы не можем отправить вас в прошлое.</label
+                >
+              </div>
             </li>
             <li class="modal-settings-item">
-              <label class="modal-text date-label" for="check-in">Дата выезда:</label>
-              <span class="date-label-icon"></span>
-              <input class="modal-input" type="date" name="check-in" id="check-out" required>
+              <label class="modal-text date-label" for="check-in"
+                >Дата Выезда:</label
+              >
+              <div class="input-group">
+                <input
+                  class="modal-input modal-input-date"
+                  placeholder="Укажите дату"
+                  type="text"
+                  name="check-in"
+                  id="check-out"
+                  required
+                />
+                <label class="modal-mess" for="check-out"
+                  >На эти даты есть свободные номера. Пока есть.</label
+                >
+              </div>
             </li>
           </ul>
-          <ul class="modal-settings age" >
+          <ul class="modal-settings age">
             <li class="modal-settings-item">
-              <label class="modal-text adult-label" for="adult">Взрослые:</label>
-              <input class="number" type="number" name="adult" id="adult" value="1" required>
+              <label class="modal-text adult-label" for="adult"
+                >Взрослые:</label
+              >
+              <div class="btn-group">
+                <button class="number-btn" type="button">-</button>
+                <input
+                  class="modal-input number"
+                  type="number"
+                  name="adult"
+                  id="adult"
+                  value="1"
+                />
+                <button class="number-btn" type="button">+</button>
+              </div>
             </li>
             <li class="modal-settings-item">
               <label class="modal-text kid-label" for="kid">Дети:</label>
-              <input class="number" type="number" name="kid" id="kid" value="0">
+              <div class="popover-section">
+                <button class="popover-btn">i</button>
+                <p class="popover-content show-pop">
+                  Укажите количество детей, которые будут с вами, возраст
+                  которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </p>
+              </div>
+              <div class="btn-group">
+                <button class="number-btn" type="button">-</button>
+                <input
+                  class="modal-input number"
+                  type="number"
+                  name="kid"
+                  id="kid"
+                  value="0"
+                />
+                <button class="number-btn" type="button">+</button>
+              </div>
             </li>
           </ul>
-          <button class= "modal-text modal-search" type="submit" >Найти</button>
+          <button class="modal-text modal-search" type="submit">Найти</button>
 
-
-        <button class="close-modal">
-          <span class="visually-hidden">Закрыть модальное окно</span>
-        </button>
-      </div>
-
+          <button class="close-modal">
+            <span class="visually-hidden">Закрыть модальное окно</span>
+          </button>
+        </div>
+      </form>
     </section>
-  <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
