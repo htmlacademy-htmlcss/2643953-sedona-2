@@ -1312,13 +1312,13 @@ body {
 }
 
 .modal {
-  justify-content: center;
-  align-items: flex-start;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(242, 242, 242, 0.8);
   display: none;
 }
