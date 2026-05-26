@@ -496,7 +496,6 @@ body {
   opacity: 0.3;
 }
 
-
 .subscription-field::placeholder {
   font-size: 18px;
   line-height: 24px;
@@ -963,7 +962,6 @@ body {
   width: 226px;
   height: 4px;
   background-color: #ffffff;
-
 }
 
 .range-toggle {
@@ -1073,7 +1071,6 @@ body {
 .view-link:hover {
   outline: none;
   border: 2px solid #000000;
-
 }
 
 .view-link:focus-visible {
@@ -1135,8 +1132,6 @@ body {
   text-transform: none;
   margin: 0 0 15px;
 }
-
-.card-img-link {}
 
 .card-img-link:hover {
   opacity: 0.6;
@@ -1355,7 +1350,6 @@ body {
   cursor: pointer;
 }
 
-
 .close-modal:hover {
   background-color: #e5e5e5;
 }
@@ -1374,7 +1368,6 @@ body {
   opacity: 0.3;
 }
 
-
 .modal-title {
   text-align: start;
   margin: 0;
@@ -1386,7 +1379,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-
 }
 
 .modal-settings-item {
@@ -1413,7 +1405,6 @@ body {
   width: auto;
   max-width: 90px;
 }
-
 
 .modal-text {
   color: #000000;
@@ -1508,7 +1499,6 @@ body {
   transform: translateX(-50%) translateY(50%);
   border: solid 3px #82b3d3;
   border-radius: 4px;
-
 }
 
 .number-btn:focus::after {
@@ -1551,7 +1541,6 @@ body {
 
 .kid-label {
   margin-right: 10px;
-
 }
 
 .popover-section {
