@@ -60,7 +60,8 @@ body {
 
 .logo-link {
   position: absolute;
-  position: 0 0;
+  top: 0;
+  left: 0;
 }
 
 .logo-link:hover {
@@ -101,7 +102,7 @@ body {
 }
 
 .menu-item {
-  padding: 20px 2px;
+  padding: 20px 2px 18px;
   box-sizing: border-box;
 }
 
@@ -366,6 +367,10 @@ body {
   width: 230px;
   margin: 0 auto 61px;
   color: #000000;
+}
+
+.pic .card-title {
+  color: #ffffff;
 }
 
 .reasons-text {
@@ -685,7 +690,7 @@ body {
 }
 
 .crumbs-item:not(:first-child) {
-  list-style-image: url(../img/list-marker.svg);
+  list-style-image: url("../img/list-marker.svg");
   padding-left: 3px;
 }
 
@@ -888,6 +893,16 @@ body {
   line-height: 24px;
 }
 
+.range-input-min {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.range-input-max {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
 .range-input:hover {
   outline: none;
 }
@@ -1000,14 +1015,14 @@ body {
 }
 
 .catalog {
-  padding: 38px 70px 23px;
+  padding: 38px 69px 23px;
 }
 
 .result-filter {
   display: flex;
   padding: 13px 0;
   align-items: flex-start;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .select-control {
@@ -1106,17 +1121,17 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 17px;
-  margin-bottom: 40px;
+  gap: 18px;
+  margin-bottom: 39px;
 }
 
 .cat-item {
   display: flex;
   flex-direction: column;
-  width: 340px;
+  width: 342px;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
-  padding: 19px;
+  padding: 20px 20px 19px;
   box-sizing: border-box;
 }
 
@@ -1124,7 +1139,7 @@ body {
   display: block;
   width: 300px;
   height: 212px;
-  margin: 0 0 18px;
+  margin: 0 0 17px;
   padding: 0;
   text-align: start;
 }
@@ -1259,7 +1274,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 37px 0;
+  padding: 39px 0 37px;
 }
 
 .pag-btn {
