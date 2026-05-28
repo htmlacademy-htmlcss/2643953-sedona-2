@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./styles/style.css">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <title>Седона: Каталог</title>
   </head>
+
   <body>
     <div class="container">
       <header class="header">
@@ -77,8 +79,7 @@
                     <label class="filter-label control-label checkbox" for="pool">Бассейн</label>
                   </li>
                   <li class="filter-item">
-                    <input class="visually-hidden control" type="checkbox" name="parking" id="parking"
-                      checked>
+                    <input class="visually-hidden control" type="checkbox" name="parking" id="parking" checked>
                     <label class="filter-label control-label checkbox" for="parking">Парковка</label>
                   </li>
                   <li class="filter-item">
@@ -91,8 +92,7 @@
                 <legend class="filter-title">Тип Жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
-                    <input class="visually-hidden control" type="radio" name="type" id="hotel"
-                      value="hotel" checked>
+                    <input class="visually-hidden control" type="radio" name="type" id="hotel" value="hotel" checked>
                     <label class="filter-label control-label radio-btn" for="hotel">Гостиница </label>
                   </li>
                   <li class="filter-item">
@@ -112,7 +112,8 @@
                 <div class="range-inputs-wrapper">
                   <label class="range-label">
                     <span class="range-label-text"> от</span>
-                    <input class="range-input range-input-min" type="number" name="min-price" value="0" placeholder="от">
+                    <input class="range-input range-input-min" type="number" name="min-price" value="0"
+                      placeholder="от">
                   </label>
                   <label class="range-label">
                     <span class="range-label-text"> до</span>
@@ -171,7 +172,7 @@
           <ul class="cat-list">
             <li class="cat-item">
               <a class="card-img-link" href="#">
-                <img class="hotel-photo" width="300" height="212"  src="./img/amara.jpg" alt="фото отеля 'Amara'">
+                <img class="hotel-photo" width="300" height="212" src="./img/amara.jpg" alt="фото отеля 'Amara'">
               </a>
               <a class="card-title-link" href="#">
                 <h3 class="card-title hot-title">Amara Resort & Spa</h3>
@@ -191,7 +192,8 @@
             </li>
             <li class="cat-item">
               <a class="card-img-link" href="#">
-                <img class="hotel-photo" width="300" height="212" src="./img/villas.jpg" alt="фото отеля 'Villas at Poco Diablo'">
+                <img class="hotel-photo" width="300" height="212" src="./img/villas.jpg"
+                  alt="фото отеля 'Villas at Poco Diablo'">
               </a>
               <a class="card-title-link" href="#">
                 <h3 class="card-title hot-title">Villas at Poco Diablo</h3>
@@ -212,7 +214,8 @@
             </li>
             <li class="cat-item">
               <a class="card-img-link" href="#">
-                <img class="hotel-photo" width="300" height="212" src="./img/desert-quail.jpg" alt="фото отеля 'Desert Quail Inn'">
+                <img class="hotel-photo" width="300" height="212" src="./img/desert-quail.jpg"
+                  alt="фото отеля 'Desert Quail Inn'">
               </a>
               <a class="card-title-link" href="#">
                 <h3 class="card-title hot-title">Desert Quail Inn</h3>
@@ -232,7 +235,8 @@
             </li>
             <li class="cat-item">
               <a class="card-img-link" href="#">
-                <img class="hotel-photo" width="300" height="212" src="./img/green-tree.jpg" alt="фото отеля 'GreenTree Inn'">
+                <img class="hotel-photo" width="300" height="212" src="./img/green-tree.jpg"
+                  alt="фото отеля 'GreenTree Inn'">
               </a>
               <a class="card-title-link" href="#">
                 <h3 class="card-title hot-title">GreenTree Inn</h3>
@@ -284,8 +288,9 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="subsciption-form" action="https://echo.htmlacademy.ru/courses" method="post">
-            <input class="subscription-field cat-field" type="email" placeholder="Ваш e-mail" name="subscribe"
-              required />
+            <label for="subscribe" class="visually-hidden">Ваш e‑mail</label>
+            <input class="subscription-field cat-field" type="email" placeholder="Ваш e-mail" id="subscribe"
+              name="subscribe" required />
             <button class="button button-text subcription-button" type="submit">
               Подписаться
             </button>
@@ -373,4 +378,5 @@
       </footer>
     </div>
   </body>
+
 </html>
